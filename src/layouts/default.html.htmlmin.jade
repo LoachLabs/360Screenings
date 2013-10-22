@@ -1,0 +1,33 @@
+doctype 5
+head
+  meta(charset="utf-8")
+  title
+    != getPreparedTitle()
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  != getBlock('meta').add(site.meta).toHTML()
+  != getBlock("styles").add(site.styles).toHTML()
+body
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="#") #{site.title}
+      .navbar-collapse.collapse.navbar-right
+        ul.nav.navbar-nav
+          li.active
+            a(href="#") Home
+          li
+            a(href="#") About
+          li
+            a(href="#") Work
+          li
+            a(href="#") Blog
+          li
+            a(href="#") Contact
+
+  != content
+  != getBlock('scripts').add(site.scripts, {defer:"defer", async:"async"}).toHTML()
+

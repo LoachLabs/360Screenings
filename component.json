@@ -1,0 +1,17 @@
+{
+  "name": "360screenings",
+  "repo": "robloach/360screenings.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "components/jquery": "2.0.3",
+    "components/bootstrap": "3.0.0"
+  },
+  "scripts": [
+    "src/files/app.js"
+  ],
+  "styles": [
+    "src/files/app.css",
+    "node_modules/bootswatch/cyborg/bootstrap.css"
+  ],
+  "main": "src/files/app.js"
+}
