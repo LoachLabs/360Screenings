@@ -13,14 +13,12 @@
     "url": "https://github.com/robloach/360screenings.com.git"
   },
   "dependencies": {
-    "docpad": "~6.53.0",
+    "docpad": "~6.54.0",
     "docpad-plugin-jade": "~2.6.0",
     "docpad-plugin-marked": "~2.1.1",
     "marked": "~0.2.9",
-
     "grunt-contrib-uglify": "~0.2.4",
     "grunt-contrib-cssmin": "~0.6.2",
-
     "bootswatch": "*"
   },
   "devDependencies": {
