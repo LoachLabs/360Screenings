@@ -5,8 +5,8 @@ docpad:
 	@docpad generate
 
 component:
-	@component install -f
-	@component build --out src/files/components --standalone app -v --dev
+	@component install
+	@component build --out src/files/components --standalone app -v
 
 npm:
 	@npm install

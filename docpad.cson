@@ -1,4 +1,4 @@
-module.exports = {
+{
   templateData:
     site:
       url: "http://360screenings.com"
