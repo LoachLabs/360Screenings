@@ -1,5 +1,4 @@
 out
 node_modules
-components
-src/files/components
+src/files/vendor
 build
