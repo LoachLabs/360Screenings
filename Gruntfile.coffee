@@ -87,7 +87,7 @@ module.exports = (grunt) ->
             src: [
               "src/files/vendor/bootstrap/dist/fonts/*"
             ],
-            dest: "src/files/vendor/bootswatch/fonts/"
+            dest: "src/files/fonts/"
             expand: true
             flatten: true
           }
@@ -101,6 +101,7 @@ module.exports = (grunt) ->
           "src/files/vendor/build.min.js": [
             "src/files/vendor/jquery/jquery.min.js"
             "src/files/vendor/bootstrap/dist/js/bootstrap.min.js"
+            "src/files/vendor/vegas/dist/jquery.vegas.min.js"
             "src/files/app.js"
           ]
 
@@ -112,6 +113,7 @@ module.exports = (grunt) ->
           "src/files/vendor/build.min.css": [
             "src/files/vendor/bootswatch/cyborg/bootstrap.min.css"
             "src/files/vendor/font-awesome/css/font-awesome.min.css"
+            "src/files/vendor/vegas/dist/jquery.vegas.min.css"
             "src/files/app.css"
           ]
 

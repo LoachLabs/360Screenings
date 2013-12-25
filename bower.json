@@ -2,6 +2,7 @@
   "name": "robloach-360screenings",
   "version": "0.0.1",
   "dependencies": {
-    "bootswatch": "~3.0.2"
+    "bootswatch": "~3.0.2",
+    "vegas": "~1.3.4"
   }
 }

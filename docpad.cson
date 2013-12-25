@@ -23,26 +23,24 @@ templateData:
 
     meta: ''
 
-  # -----------------------------
-  # Helper Functions
+plugins:
+  grunt:
+    populateCollectionsBefore: []
+    writeAfter: false
 
-  # Get the prepared site/document title
-  # Often we would like to specify particular formatting to our page's title
-  # we can apply that formatting here
-  getPreparedTitle: ->
-    # if we have a document title, then we should use that and suffix the site's title onto it
-    if @document.title
-      "#{@document.title} | #{@templateData.site.title}"
-    # if our document does not have it's own title, then we should just use the site's title
-    else
-      @templateData.site.title
-
-  # Get the prepared site/document description
-  getPreparedDescription: ->
-    # if we have a document description, then we should use that, otherwise use the site's description
-    @document.description or @site.description
-
-  # Get the prepared site/document keywords
-  getPreparedKeywords: ->
-    # Merge the document keywords with the site keywords
-    @site.keywords.concat(@document.keywords or []).join(', ')
+environments:
+  development:
+    templateData:
+      site:
+        scripts: [
+          "/vendor/jquery/jquery.js"
+          "/vendor/bootstrap/dist/js/bootstrap.js"
+          "/vendor/vegas/dist/jquery.vegas.js"
+          "/app.js"
+        ]
+        styles: [
+          "/vendor/bootswatch/cyborg/bootstrap.css"
+          "/vendor/font-awesome/css/font-awesome.css"
+          "/vendor/vegas/dist/jquery.vegas.css"
+          "/app.css"
+        ]

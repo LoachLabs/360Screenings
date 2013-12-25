@@ -1,7 +1,10 @@
-doctype 5
+doctype html
 head
   meta(charset="utf-8")
-  title Greetins
+  if document.title
+    title= document.title
+  else
+    title= site.title
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="shortcut icon", href="favicon.ico", type="image/vnd.microsoft.icon")
   != getBlock('meta').add(site.meta).toHTML()
@@ -26,9 +29,12 @@ body
             a(href="/contact") Contact
         ul.nav.navbar-nav.navbar-right
           li
-            a(href="#") Twitter
+            a(href="#")
+              i.icon-twitter
+              span Twitter
+
           li
             a(href="#") Facebook
 
   != content
-  != getBlock('scripts').add(site.scripts, {defer:"defer", async:"async"}).toHTML()
+  != getBlock('scripts').add(site.scripts).toHTML()

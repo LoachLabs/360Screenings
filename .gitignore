@@ -1,4 +1,5 @@
 out
 node_modules
 src/files/vendor
+src/files/fonts
 build
