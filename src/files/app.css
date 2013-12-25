@@ -2,14 +2,26 @@ body h1 {
   font-size: 100%;
   margin-top: 0;
   margin-bottom: 0;
+  display: inline-block;
+}
+
+.navbar-header img {
+  width: 50px;
+  height: 50px;
+}
+body .navbar-nav {
+  margin-top: 0.9em;
+}
+body .navbar-header button {
+  margin-top: 1.8em;
 }
 
 .row .col-sm-12 h2 {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .jumbotron .container .row .col-sm-12 h2 {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 body .jumbotron {
@@ -18,4 +30,10 @@ body .jumbotron {
 
 body .navbar-inverse {
   background-color: black;
+}
+
+i.fa {
+  font-size: 1.2em;
+  vertical-align: middle;
+  padding-right: 0.4em;
 }

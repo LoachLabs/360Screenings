@@ -51,10 +51,10 @@ $(function() {
   });
 
   // Display the slideshow.
-  $.vegas('slideshow', {
+  /*$.vegas('slideshow', {
     backgrounds: backgroundList,
     delay: 6000
-  });
+  });*/
 
   // Set the overlay.
   $.vegas('overlay', {

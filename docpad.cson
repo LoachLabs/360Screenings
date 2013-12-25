@@ -32,6 +32,7 @@ environments:
   development:
     templateData:
       site:
+        title: "360 Screenings"
         scripts: [
           "/vendor/jquery/jquery.js"
           "/vendor/bootstrap/dist/js/bootstrap.js"
