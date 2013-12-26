@@ -1,0 +1,22 @@
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Make the 404 page handle not found requests.
+ErrorDocument 404 /404.html
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A1209600
+</IfModule>
+
+# Redirects
+Redirect 301 /ghost /2012-05
+Redirect 301 /fightclub /2012-08
+Redirect 301 /28dayslater /2012-10
+Redirect 301 /amelie /2013-02
+Redirect 301 /OneFlewOvertheCuckoosNest /2013-05
+Redirect 301 /October2013 /2013-10
