@@ -33,6 +33,6 @@ section
         each event in getCollection("events").toJSON()
           li.col-sm-4
             a(href="#{event.url}").thumbnail
-              img(src!=getThumbnail(event.thumbnail, "zoomcrop", {w: 400, h: 300}), alt="#{event.title}" title="#{event.title}")
+              img(src!=getThumbnail(event.thumbnail, "zoomcrop", {w: 400, h: 300}), alt="#{event.title}", title="#{event.title}", width="400px", height="300px")
               .caption
                 h2= event.title

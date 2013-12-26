@@ -6,7 +6,7 @@ head
   else
     title= site.title
   meta(name="viewport", content="width=device-width, initial-scale=1")
-  link(rel="shortcut icon", href="favicon.ico", type="image/vnd.microsoft.icon")
+  link(rel="shortcut icon", href="/favicon.ico", type="image/vnd.microsoft.icon")
   != getBlock('meta').add(site.meta).toHTML()
   != getBlock("styles").add(site.styles).toHTML()
 body
