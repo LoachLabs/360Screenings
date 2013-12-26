@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+article.container
+  header.row
+    .col-sm-12
+      h1= document.title
+      if document.quote
+        blockquote!= document.quote
+
+  .row
+    .col-md-7
+      != content
+    .col-md-5
+      if document.location
+        h3.location!= document.location
+      ul.gallery.row
+        each file in getDocument().getAssociatedFiles().toJSON()
+          li.col-xs-4.col-md-4
+            a(href="#{file.url}").thumbnail
+              img(src!=getThumbnail(file.url, "zoomcrop", {w: 100, h: 100}), alt="#{file.name}" title="View this image")

@@ -1,13 +1,22 @@
-360Screenings.com
-=================
+# 360Screenings.com
 
 The website for [360Screenings.com](http://360screenings.com).
 
 
-Build
------
+## Build
 
 ``` bash
 $ npm install
 $ docpad generate
 ```
+
+
+<!-- LICENSE/ -->
+
+## License
+
+Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://creativecommons.org/licenses/MIT/)
+
+Copyright &copy; Rob Loach (http://robloach.net)
+
+<!-- /LICENSE -->

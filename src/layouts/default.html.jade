@@ -2,7 +2,7 @@ doctype html
 head
   meta(charset="utf-8")
   if document.title
-    title= document.title
+    title #{site.title} - #{document.title}
   else
     title= site.title
   meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -18,7 +18,7 @@ body
           span.icon-bar
           span.icon-bar
         a.navbar-brand(href="/")
-          img.logo(src="images/360logowhite.png")
+          img.logo(src="/images/360logowhite.png")
           h1 #{site.title}
       .navbar-collapse.collapse
         ul.nav.navbar-nav
@@ -40,4 +40,11 @@ body
               span Facebook
 
   != content
+
+  footer.container
+    .row
+      .col-md-12
+        :markdown
+          Copyright &copy; 2013 [360 Screenings](http://360screenings.com)
+
   != getBlock('scripts').add(site.scripts).toHTML()

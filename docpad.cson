@@ -23,10 +23,18 @@ templateData:
 
     meta: ''
 
+collections:
+  # Event listing, ordered by reverse basename (date).
+  events: (database) ->
+    database.findAllLive({layout: "event"}, [basename: -1])
+
 plugins:
   grunt:
     populateCollectionsBefore: []
     writeAfter: false
+  thumbnails:
+    imageMagick: true
+    'default': 'zoomcrop'
 
 environments:
   development:

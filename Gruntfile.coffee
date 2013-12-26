@@ -78,6 +78,7 @@ module.exports = (grunt) ->
         "src/vendor/bootstrap/LICENSE-MIT"
         "src/vendor/bootstrap/package.json"
         "src/vendor/bootstrap/README.md"
+        "src/files/fonts"
       ]
 
     copy:
