@@ -7,7 +7,7 @@ The website for [360Screenings.com](http://360screenings.com).
 
 ``` bash
 $ npm install
-$ docpad generate
+$ npm start
 ```
 
 

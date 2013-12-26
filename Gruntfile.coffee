@@ -1,15 +1,3 @@
-###
-# This file is part of 360 Screenings.
-#
-# (c) Rob Loach (http://robloach.net)
-#
-# For the full copyright and license information, please view the LICENSE
-# file that was distributed with this source code.
-###
-
-# Expose `Gruntfile`.
-
-
 module.exports = (grunt) ->
 
   # Create the banner for the stylesheet and JavaScript files.
@@ -87,6 +75,18 @@ module.exports = (grunt) ->
           {
             src: [
               "src/files/vendor/bootstrap/dist/fonts/*"
+            ],
+            dest: "src/files/fonts/"
+            expand: true
+            flatten: true
+          },
+          {
+            src: "src/files/vendor/vegas/dist/images/loading.gif"
+            dest: "src/files/vendor/images/loading.gif"
+          },
+          {
+            src: [
+              "src/files/vendor/font-awesome/fonts/*"
             ],
             dest: "src/files/fonts/"
             expand: true
