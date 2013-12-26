@@ -127,3 +127,8 @@ article .container p {
 body footer p {
   color: white;
 }
+
+iframe {
+  width: 100%;
+  border: none;
+}
