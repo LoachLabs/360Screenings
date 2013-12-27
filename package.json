@@ -35,6 +35,7 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server",
-    "postinstall": "node_modules/bower/bin/bower install"
+    "postinstall": "node_modules/bower/bin/bower install",
+    "test": "node_modules/docpad/bin/docpad generate -e production -d"
   }
 }
