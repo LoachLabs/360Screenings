@@ -44,11 +44,16 @@ environments:
         scripts: [
           "/vendor/jquery/jquery.js"
           "/vendor/bootstrap/dist/js/bootstrap.js"
+          "/vendor/blueimp-gallery/js/blueimp-gallery.js"
+          "/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js"
+          "/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js"
           "/vendor/vegas/dist/jquery.vegas.js"
           "/app.js"
         ]
         styles: [
           "/vendor/bootswatch/cyborg/bootstrap.css"
+          "/vendor/blueimp-gallery/css/blueimp-gallery.css"
+          "/vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.css"
           "/vendor/font-awesome/css/font-awesome.css"
           "/vendor/vegas/dist/jquery.vegas.css"
           "/app.css"

@@ -21,5 +21,28 @@ article
         ul.gallery.row
           each file in getDocument().getAssociatedFiles().toJSON()
             li.col-xs-4.col-md-4
-              a(href="#{file.url}").thumbnail
+              a(href="#{file.url}", data-gallery).thumbnail
                 img(src!=getThumbnail(file.url, "zoomcrop", {w: 100, h: 100}), alt="#{file.name}", title="View this image", width="100", heigth="100")
+
+#blueimp-gallery.blueimp-gallery
+  .slides
+  h3.title
+  a.prev ‹
+  a.next ›
+  a.close ×
+  a.play-pause
+  ol.indicator
+  .modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type="button",aria-hidden="true") &times;
+          h4.modal-title
+        .modal-body.next
+        .modal-footer
+          button.btn.btn-default.pull-left.prev(type="button")
+            i.glyphicon.glyphicon-chevron-left
+            span Previous
+          button.btn.btn-primary.next(type="button")
+            span Next
+            i.glyphicon.glyphicon-chevron-right

@@ -66,6 +66,7 @@ module.exports = (grunt) ->
         "src/files/vendor/bootstrap/package.json"
         "src/files/vendor/bootstrap/README.md"
         "src/files/fonts"
+        "src/files/img"
       ]
 
     copy:
@@ -98,6 +99,14 @@ module.exports = (grunt) ->
             dest: "src/files/fonts/"
             expand: true
             flatten: true
+          },
+          {
+            src: [
+              "src/files/vendor/blueimp-gallery/img/*"
+            ],
+            dest: "src/files/img"
+            expand: true
+            flatten: true
           }
         ]
 
@@ -109,6 +118,9 @@ module.exports = (grunt) ->
           "src/files/vendor/build.min.js": [
             "src/files/vendor/jquery/jquery.min.js"
             "src/files/vendor/bootstrap/dist/js/bootstrap.min.js"
+            "src/files/vendor/blueimp-gallery/js/blueimp-gallery.js"
+            "src/files/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js"
+            "src/files/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js"
             "src/files/vendor/vegas/dist/jquery.vegas.min.js"
             "src/files/app.js"
           ]
@@ -120,6 +132,8 @@ module.exports = (grunt) ->
         files:
           "src/files/vendor/build.min.css": [
             "src/files/vendor/bootswatch/cyborg/bootstrap.min.css"
+            "src/files/vendor/blueimp-gallery/css/blueimp-gallery.min.css"
+            "src/files/vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css"
             "src/files/vendor/font-awesome/css/font-awesome.min.css"
             "src/files/vendor/vegas/dist/jquery.vegas.min.css"
             "src/files/app.css"
