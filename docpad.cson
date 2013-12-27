@@ -61,3 +61,9 @@ environments:
     plugins:
       cleanurls:
         enabled: false
+      grunt:
+        populateCollectionsBefore: []
+        writeAfter: false
+      thumbnails:
+        imageMagick: true
+        'default': 'zoomcrop'
