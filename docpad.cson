@@ -58,3 +58,6 @@ environments:
           "/vendor/vegas/dist/jquery.vegas.css"
           "/app.css"
         ]
+    plugins:
+      cleanurls:
+        enabled: false
