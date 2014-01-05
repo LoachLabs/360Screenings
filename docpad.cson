@@ -30,11 +30,13 @@ collections:
 
 plugins:
   grunt:
-    populateCollectionsBefore: []
+    docpadLoaded: []
     writeAfter: false
   thumbnails:
     imageMagick: true
     'default': 'zoomcrop'
+  cleanurls:
+    enabled: true
 
 environments:
   development:
@@ -62,7 +64,7 @@ environments:
       cleanurls:
         enabled: false
       grunt:
-        populateCollectionsBefore: []
+        docpadLoaded: []
         writeAfter: false
       thumbnails:
         imageMagick: true

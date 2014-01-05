@@ -1,14 +1,38 @@
 # 360Screenings.com
 
-The website for [360Screenings.com](http://360screenings.com).
+<!-- BADGES/ -->
+
+[![Build Status](https://secure.travis-ci.org/RobLoach/360screenings.com.png?branch=master)](http://travis-ci.org/RobLoach/360screenings.com "Check this project's build status on TravisCI")
+
+<!-- /BADGES -->
 
 
-## Build
+The website for [360Screenings.com](http://360screenings.com), powered by [DocPad](http://docpad.org).
 
-``` bash
-$ npm install
-$ npm start
-```
+
+## Dependencies
+
+* [Node.js](http://nodejs.org)
+
+
+## Usage
+
+#### Development
+
+    npm install
+    npm start
+
+#### Testing
+
+    npm test
+
+#### Staging
+
+    npm run-script staging
+
+#### Deployment
+
+    npm run-script deploy
 
 
 <!-- LICENSE/ -->
