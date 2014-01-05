@@ -37,7 +37,7 @@
     "start": "node_modules/docpad/bin/docpad run",
     "staging": "node_modules/docpad/bin/docpad run -e production",
     "postinstall": "node_modules/bower/bin/bower install",
-    "test": "node_modules/docpad/bin/docpad generate -e production -d",
+    "test": "node_modules/docpad/bin/docpad generate -e production",
     "deploy": "node_modules/docpad/bin/docpad deploy-ghpages -e static"
   }
 }
