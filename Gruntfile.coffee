@@ -146,5 +146,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask "static", ["clean", "copy", "uglify", "cssmin"]
   grunt.registerTask "production", ["clean", "copy", "uglify", "cssmin"]
+  grunt.registerTask "development", ["clean", "copy", "uglify", "cssmin"]
 
   grunt.registerTask "default", ["static"]
