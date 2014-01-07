@@ -144,4 +144,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-uglify"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
 
-  grunt.registerTask "default", ["clean", "copy", "uglify", "cssmin"]
+  grunt.registerTask "static", ["clean", "copy", "uglify", "cssmin"]
+  grunt.registerTask "production", ["clean", "copy", "uglify", "cssmin"]
+
+  grunt.registerTask "default", ["static"]
