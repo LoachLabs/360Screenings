@@ -147,3 +147,17 @@ iframe {
 .modal-footer {
   border-top: none;
 }
+
+/**
+ * Register page
+ */
+article.register form label {
+  display: none;
+}
+
+/**
+ * Press page
+ */
+article.press h2, article.contact h2 {
+  font-size: 1.8em;
+}
