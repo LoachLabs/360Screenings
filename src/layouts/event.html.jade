@@ -22,7 +22,7 @@ article
           each file in getDocument().getAssociatedFiles().toJSON()
             li.col-xs-4.col-md-4
               a(href="#{file.url}", data-gallery, title="#{file.basename}").thumbnail
-                img(src!=getThumbnail(file.url, "zoomcrop", {w: 100, h: 100}), alt="#{file.name}", title="View this image", width="100", heigth="100")
+                img(src!=getThumbnail(file.url, "zoomcrop", {w: 100, h: 100}), alt="Photo of #{file.name}", title="View this image", width="100", heigth="100")
 
 #blueimp-gallery.blueimp-gallery
   .slides
