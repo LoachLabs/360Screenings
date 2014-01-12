@@ -20,9 +20,9 @@ article
           h3.location!= document.location
         ul.gallery.row
           each file in getDocument().getAssociatedFiles().toJSON()
-            li.col-xs-4.col-md-4
+            li.col-xs-3.col-md-4
               a(href="#{file.url}", data-gallery, title="#{file.basename}").thumbnail
-                img(src!=getThumbnail(file.url, "zoomcrop", {w: 100, h: 100}), alt="Photo of #{file.name}", title="View this image", width="100", heigth="100")
+                img(src!=getThumbnail(file.url, "zoomcrop", {w: 125, h: 125}), alt="Photo of #{file.name}", title="View this image", width="125", heigth="125")
 
 #blueimp-gallery.blueimp-gallery
   .slides
