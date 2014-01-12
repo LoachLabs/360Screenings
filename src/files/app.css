@@ -43,6 +43,9 @@ i.fa {
   vertical-align: middle;
   padding-right: 0.4em;
 }
+button span.text {
+  display: none;
+}
 
 /**
  * Fonts
@@ -118,6 +121,9 @@ ul.eventlisting li .caption {
   z-index: 999;
   top: 0px;
   text-shadow: black 3px 2px 3px;
+}
+ul.eventlisting h2 {
+  margin: 0.5em;
 }
 
 /**

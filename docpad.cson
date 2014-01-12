@@ -64,7 +64,7 @@ environments:
       cleanurls:
         enabled: false
       grunt:
-        populateCollectionsBefore: ["development"]
+        populateCollectionsBefore: false
         writeAfter: false
       thumbnails:
         imageMagick: true

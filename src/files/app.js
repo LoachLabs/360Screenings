@@ -53,7 +53,7 @@ $(function() {
   // Display the slideshow.
   $.vegas('slideshow', {
     backgrounds: backgroundList,
-    delay: 6000
+    delay: 10000
   });
 
   // Set the overlay.

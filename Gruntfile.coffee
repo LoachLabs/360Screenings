@@ -27,6 +27,7 @@ module.exports = (grunt) ->
         "src/files/vendor/bootswatch/spacelab"
         "src/files/vendor/bootswatch/tests"
         "src/files/vendor/bootswatch/united"
+        "src/files/vendor/bootswatch/yeti"
         "src/files/vendor/bootswatch/.bower.json"
         "src/files/vendor/bootswatch/.gitignore"
         "src/files/vendor/bootswatch/.travis.yml"
