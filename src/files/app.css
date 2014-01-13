@@ -151,7 +151,7 @@ iframe {
 /**
  * Register page
  */
-article.register form label {
+form label {
   display: none;
 }
 

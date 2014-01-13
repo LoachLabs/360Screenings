@@ -11,10 +11,11 @@ article.register
   .container
     .row
       .col-sm-12
-        form.validate.well#mc-embedded-subscribe-form(action="http://360screenings.us5.list-manage2.com/subscribe/post?u=ebc87bb944ba1f4df138fa027&amp;id=144e89fef7", method="post", name="mc-embedded-subscribe-form", _lpchecked="1")
-          p Be the first to know when our next 360 screening will happen by providing your email address below.
+        form.validate.well.form-inline#mc-embedded-subscribe-form(action="http://360screenings.us5.list-manage2.com/subscribe/post?u=ebc87bb944ba1f4df138fa027&amp;id=144e89fef7", method="post", name="mc-embedded-subscribe-form", _lpchecked="1", role="form")
+          p Be the first to know when our next 360 Screening will happen by providing your email address below:
 
-          label(for="email") E-mail
-          input#mce-EMAIL.email(type="email", name="EMAIL", placeholder="email address", required="", it="email")
+          .form-group
+            label(for="email") E-mail
+            input.input-lg.form-control#mce-EMAIL.email(type="email", name="EMAIL", placeholder="Enter email", required="", it="email")
 
-          input#mc-embedded-subscribe.button.btn-success(type="submit", value="Subscribe", name="subscribe")
+          button.btn.btn-lg#mc-embedded-subscribe.button.btn-success(type="submit", value="Subscribe", name="subscribe") Subscribe

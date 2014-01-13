@@ -1,7 +1,7 @@
 ﻿---
 layout: default
 ---
-section
+section.index
   .jumbotron
     .container
       header.row
@@ -24,10 +24,16 @@ section
             Tickets now on sale for 360 Screenings: **[LOVE](/2014-02)**. February 7 and 8, 2014.
 
           a(href="https://www.uniiverse.com/listings/360-screenings-love-toronto-B6WFR")
-            button.btn.btn-success.btn-lg(type="button") Buy Tickets
+            button.btn.btn-success.btn-lg.buytickets(type="button") Buy Tickets
 
         .col-md-4
           iframe(height="280", src="//www.youtube.com/embed/s8AGONJCyvE?rel=0&theme=dark&height=280&modestbranding=1", allowfullscreen, title="360 Screenings Recap")
+
+          form.validate.form-inline#mc-embedded-subscribe-form(action="http://360screenings.us5.list-manage2.com/subscribe/post?u=ebc87bb944ba1f4df138fa027&amp;id=144e89fef7", method="post", name="mc-embedded-subscribe-form", _lpchecked="1", role="form")
+            .form-group
+              label(for="email") Register through email
+              input.input-sm.form-control#mce-EMAIL.email(type="email", name="EMAIL", placeholder="Register email address", required="", it="email")
+            button#mc-embedded-subscribe.btn.btn-primary.btn-sm(type="submit", value="Subscribe", name="subscribe") Subscribe
 
   .container
     .row
