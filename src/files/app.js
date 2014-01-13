@@ -2,6 +2,16 @@
   $(document).ready(function() {
 
     /**
+     * Uniiverse Integration
+     */
+    if ($('.unii-listing-button').length > 0) {
+      $.ajaxSetup({
+        cache: true
+      });
+      $.getScript('https://www.uniiverse.com/embed.js');
+    }
+
+    /**
      * The Slideshow.
      */
     backgroundList = [
