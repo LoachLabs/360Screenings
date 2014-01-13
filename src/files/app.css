@@ -38,7 +38,7 @@ body .jumbotron {
 body .navbar-inverse {
   background-color: black;
 }
-i.fa {
+.navbar-right i.fa {
   font-size: 1.2em;
   vertical-align: middle;
   padding-right: 0.4em;
@@ -160,4 +160,11 @@ article.register form label {
  */
 article.press h2, article.contact h2 {
   font-size: 1.8em;
+}
+
+/**
+ * Contact page
+ */
+article.contact i a {
+  margin-left: 0.5em;
 }
