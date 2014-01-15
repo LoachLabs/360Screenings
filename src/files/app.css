@@ -81,7 +81,6 @@ h3.location {
   text-align: center;
 }
 
-
 /**
  * Footer
  */
@@ -146,6 +145,10 @@ iframe {
 }
 .modal-footer {
   border-top: none;
+}
+
+.jumbotron p {
+  margin-bottom: 1em;
 }
 
 /**
