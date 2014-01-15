@@ -11,11 +11,9 @@ section.index
       .row
         .col-md-8
           :markdown
-            **[360 Screenings](http://360screenings.com)** is part film screening, part 
-            theatrical event with a dash of mystery. You, the
-            audience, are encouraged to explore, uncover and interact with everything that surrounds you.
+            **[360 Screenings](http://360screenings.com)** provides a cinematic experience that audiences not only watch, but also become a part of through live theatre installations. The location, a *Toronto* heritage building, is kept secret until 24 hours prior to the screening. You, the audience, are encouraged to explore, uncover and interact with everything that surrounds you. Part film, part theatre, with a dash of mystery.
 
-            Tickets go on sale for 360 Screenings: **[LOVE](/2014-02)** Thursday, January 16, 2014 at 10:00am. Join us February 7 and 8, 2014.
+            Join us February 7th and 8th for the next 360 Screenings event: **[LOVE](/2014-02)**. Tickets will be available on *Thursday, January 16, 2014* at 10:00am.
 
           a.unii-listing-button.unii-medium.unii-pink(href="https://www.uniiverse.com/listings/360-screenings-love-toronto-B6WFR", target="_blank") Book it!
 
@@ -34,6 +32,6 @@ section.index
         each event in getCollection("events").toJSON()
           li.col-sm-6.col-md-4
             a(href="#{event.url}").thumbnail
-              img(src!=getThumbnail(event.thumbnail, "zoomcrop", {w: 400, h: 300}), alt="#{event.title}", title="#{event.title}", width="400px", height="300px")
+              img(src!=getThumbnail(event.thumbnail, "zoomcrop", {w: 400, h: 300}), alt="#{event.title}", title="#{event.title}", width="400", height="300")
               .caption
                 h2= event.title
