@@ -23,6 +23,9 @@ templateData:
 
     meta: ''
 
+    services:
+      googleAnalytics: 'UA-347108-6'
+
 collections:
   # Event listing, ordered by reverse basename (date).
   events: (database) ->
@@ -60,6 +63,8 @@ environments:
           "/vendor/vegas/dist/jquery.vegas.css"
           "/app.css"
         ]
+        services:
+          googleAnalytics: 'UA-347108-6'
     plugins:
       cleanurls:
         enabled: false
