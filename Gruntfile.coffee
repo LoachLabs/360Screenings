@@ -111,21 +111,6 @@ module.exports = (grunt) ->
           }
         ]
 
-    uglify:
-      options:
-        banner: banner
-      dev:
-        files:
-          "src/files/vendor/build.min.js": [
-            "src/files/vendor/jquery/jquery.min.js"
-            "src/files/vendor/bootstrap/dist/js/bootstrap.min.js"
-            "src/files/vendor/blueimp-gallery/js/blueimp-gallery.js"
-            "src/files/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js"
-            "src/files/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js"
-            "src/files/vendor/vegas/dist/jquery.vegas.min.js"
-            "src/files/app.js"
-          ]
-
     cssmin:
       options:
         banner: banner
@@ -142,11 +127,10 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks "grunt-contrib-clean"
   grunt.loadNpmTasks "grunt-contrib-copy"
-  grunt.loadNpmTasks "grunt-contrib-uglify"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
 
-  grunt.registerTask "static", ["clean", "copy", "uglify", "cssmin"]
-  grunt.registerTask "production", ["clean", "copy", "uglify", "cssmin"]
-  grunt.registerTask "development", ["clean", "copy", "uglify", "cssmin"]
+  grunt.registerTask "static", ["clean", "copy", "cssmin"]
+  grunt.registerTask "production", ["clean", "copy", "cssmin"]
+  grunt.registerTask "development", ["clean", "copy", "cssmin"]
 
   grunt.registerTask "default", ["static"]
