@@ -42,7 +42,7 @@ plugins:
     enabled: true
   redirector:
       redirects:
-          "October2013": "exorcist"
+          "October2013": "/exorcist"
 
 environments:
   development:
