@@ -40,6 +40,9 @@ plugins:
     'default': 'zoomcrop'
   cleanurls:
     enabled: true
+  redirector:
+      redirects:
+          "October2013": "exorcist"
 
 environments:
   development:
