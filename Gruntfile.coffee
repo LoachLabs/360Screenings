@@ -111,26 +111,11 @@ module.exports = (grunt) ->
           }
         ]
 
-    cssmin:
-      options:
-        banner: banner
-      dev:
-        files:
-          "src/files/vendor/build.min.css": [
-            "src/files/vendor/bootswatch/cyborg/bootstrap.min.css"
-            "src/files/vendor/blueimp-gallery/css/blueimp-gallery.min.css"
-            "src/files/vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css"
-            "src/files/vendor/font-awesome/css/font-awesome.min.css"
-            "src/files/vendor/vegas/dist/jquery.vegas.min.css"
-            "src/files/app.css"
-          ]
-
   grunt.loadNpmTasks "grunt-contrib-clean"
   grunt.loadNpmTasks "grunt-contrib-copy"
-  grunt.loadNpmTasks "grunt-contrib-cssmin"
 
-  grunt.registerTask "static", ["clean", "copy", "cssmin"]
-  grunt.registerTask "production", ["clean", "copy", "cssmin"]
-  grunt.registerTask "development", ["clean", "copy", "cssmin"]
+  grunt.registerTask "static", ["clean", "copy"]
+  grunt.registerTask "production", ["clean", "copy"]
+  grunt.registerTask "development", ["clean", "copy"]
 
   grunt.registerTask "default", ["static"]

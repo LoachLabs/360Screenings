@@ -13,7 +13,7 @@ templateData:
 
     # The website's styles
     styles: [
-      '/vendor/build.min.css'
+      '/build.css'
     ]
 
     # The website's scripts

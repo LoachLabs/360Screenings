@@ -1,9 +1,12 @@
 {
+  "title": "360 Screenings",
   "name": "robloach-360screenings.com",
   "version": "0.0.1",
-  "description": "360 Screenings",
-  "author": "Rob Loach (http://robloach.net)",
-  "license": "MIT",
+  "description": "Website for 360Screenings.com",
+  "author": "Rob Loach (http://github.com/robloach)",
+  "license": {
+    "type": "MIT"
+  },
   "engines": {
     "node": "0.10",
     "npm": "1.3"
@@ -33,7 +36,8 @@
     "docpad-plugin-thumbnails": "~2.1.1",
     "docpad-plugin-ghpages": "~2.4.1",
     "docpad-plugin-cleanurls": "~2.7.0",
-    "docpad-plugin-uglify": "~2.4.0"
+    "docpad-plugin-uglify": "~2.4.0",
+    "docpad-plugin-cleancss": "~2.0.2"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.6.0",
@@ -50,5 +54,15 @@
     "postinstall": "node_modules/bower/bin/bower install",
     "test": "node_modules/docpad/bin/docpad generate --env static",
     "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static"
+  },
+  "maintainers": [
+    "Rob Loach (https://github.com/RobLoach)"
+  ],
+  "contributors": [
+    "nedloach (https://github.com/nedloach)",
+    "RobLoach (https://github.com/RobLoach)"
+  ],
+  "bugs": {
+    "url": "https://github.com/robloach/360screenings.com/issues"
   }
 }

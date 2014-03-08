@@ -1,0 +1,9 @@
+---
+cleancss: true
+---
+@import "vendor/bootswatch/cyborg/bootstrap.min.css";
+@import "vendor/blueimp-gallery/css/blueimp-gallery.min.css";
+@import "vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css";
+@import "vendor/font-awesome/css/font-awesome.min.css";
+@import "vendor/vegas/dist/jquery.vegas.min.css";
+@import "app.css";
