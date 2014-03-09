@@ -1,6 +1,7 @@
 {
   "title": "360 Screenings",
-  "name": "robloach-360screenings.com",
+  "name": "360screenings.com",
+  "github": "robloach/360screenings.com",
   "version": "0.0.1",
   "description": "Website for 360Screenings.com",
   "author": "Rob Loach (http://github.com/robloach)",
@@ -17,7 +18,7 @@
   },
   "badges": {
     "travis": true,
-    "npm": true,
+    "npm": false,
     "david": true,
     "daviddev": false,
     "gittip": "RobLoach",
@@ -30,7 +31,6 @@
     "marked": "~0.3.0",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-associatedfiles": "~2.2.0",
-    "grunt-contrib-cssmin": "~0.9.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.5.0",
     "docpad-plugin-thumbnails": "~2.1.1",
@@ -60,7 +60,7 @@
   ],
   "contributors": [
     "nedloach (https://github.com/nedloach)",
-    "RobLoach (https://github.com/RobLoach)"
+    "Rob Loach (https://github.com/RobLoach)"
   ],
   "bugs": {
     "url": "https://github.com/robloach/360screenings.com/issues"
