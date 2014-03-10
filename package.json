@@ -1,7 +1,7 @@
 {
   "title": "360 Screenings",
   "name": "360screenings.com",
-  "github": "robloach/360screenings.com",
+  "github": "RobLoach/360screenings.com",
   "version": "0.0.1",
   "description": "Website for 360Screenings.com",
   "author": "Rob Loach (http://github.com/robloach)",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robloach/360screenings.com.git"
+    "url": "https://github.com/RobLoach/360screenings.com.git"
   },
   "badges": {
     "travis": true,
