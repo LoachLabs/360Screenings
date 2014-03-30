@@ -1,7 +1,19 @@
-/**
+---
+cleancss: true
+---
+/*!
+ * Imports
+ */
+@import url("vendor/bootswatch/cyborg/bootstrap.css");
+@import url("vendor/blueimp-gallery/css/blueimp-gallery.css");
+@import url("vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.css");
+@import url("vendor/components-font-awesome/css/font-awesome.css");
+@import url("vendor/vegas/dist/jquery.vegas.css");
+
+/*!
  * Navigation bar
  */
-body .navbar-header h1 {
+body header .navbar-header h1 {
   margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
@@ -171,3 +183,4 @@ article.press h2, article.contact h2 {
 article.contact i a {
   margin-left: 0.5em;
 }
+

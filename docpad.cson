@@ -13,12 +13,12 @@ templateData:
 
     # The website's styles
     styles: [
-      '/build.css'
+      '/app.css'
     ]
 
     # The website's scripts
     scripts: [
-      '/build.js'
+      '/app.js'
     ]
 
     meta: ''
@@ -43,34 +43,34 @@ plugins:
   redirector:
       redirects:
           "October2013": "/exorcist"
+  cleancss:
+    cleancssOpts:
+      # * for keeping all (default), 1 for keeping first one only, 0 for
+      # removing all
+      keepSpecialComments: '*'
+
+      # Whether to keep line breaks (default is false).
+      keepBreaks: false
+
+      # Turns on benchmarking mode measuring time spent on cleaning up.
+      benchmark: false
+
+      # Whether to process @import rules.
+      processImport: true
+
+      # Whether to skip URLs rebasing.
+      noRebase: false
+
+      # set to true to disable advanced optimizations.
+      noAdvanced: false
 
 environments:
   development:
-    templateData:
-      site:
-        title: "360 Screenings"
-        scripts: [
-          "/vendor/jquery/jquery.js"
-          "/vendor/bootstrap/dist/js/bootstrap.js"
-          "/vendor/blueimp-gallery/js/blueimp-gallery.js"
-          "/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js"
-          "/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js"
-          "/vendor/vegas/dist/jquery.vegas.js"
-          "/app.js"
-        ]
-        styles: [
-          "/vendor/bootswatch/cyborg/bootstrap.css"
-          "/vendor/blueimp-gallery/css/blueimp-gallery.css"
-          "/vendor/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.css"
-          "/vendor/font-awesome/css/font-awesome.css"
-          "/vendor/vegas/dist/jquery.vegas.css"
-          "/app.css"
-        ]
-        services:
-          googleAnalytics: 'UA-347108-6'
     plugins:
       cleanurls:
-        enabled: false
+        enabled: true
+      cleancss:
+        enabled: true
       grunt:
         populateCollectionsBefore: false
         writeAfter: false
