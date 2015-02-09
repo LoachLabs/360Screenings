@@ -8,10 +8,8 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](http://img.shields.io/travis-ci/robloach/360screenings.com.png?branch=master)](http://travis-ci.org/robloach/360screenings.com "Check this project's build status on TravisCI")
-[![Dependency Status](https://david-dm.org/robloach/360screenings.com.png?theme=shields.io)](https://david-dm.org/robloach/360screenings.com)<br/>
-[![Gittip donate button](http://img.shields.io/gittip/RobLoach.png)](https://www.gittip.com/RobLoach/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
+[![Build Status](https://img.shields.io/travis/LoachLabs/360Screenings/master.svg)](http://travis-ci.org/LoachLabs/360screenings.com "Check this project's build status on TravisCI")
+[![Dependency Status](https://img.shields.io/david/LoachLabs/360Screenings.svg)](https://david-dm.org/LoachLabs/360Screenings)<br/>
 
 <!-- /BADGES -->
 
@@ -53,5 +51,3 @@ Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissi
 Copyright &copy; Rob Loach (http://github.com/robloach)
 
 <!-- /LICENSE -->
-
-

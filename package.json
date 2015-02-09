@@ -1,7 +1,7 @@
 {
   "title": "360 Screenings",
-  "name": "360screenings.com",
-  "github": "LoachLabs/360Screenings",
+  "name": "360Screenings",
+  "repo": "LoachLabs/360Screenings",
   "private": true,
   "version": "0.0.1",
   "description": "Website for 360Screenings.com",
@@ -20,10 +20,11 @@
   "badges": {
     "travis": true,
     "npm": false,
-    "david": true,
+    "david": "LoachLabs/360Screenings",
     "daviddev": false,
-    "gittip": "RobLoach",
-    "flattr": "2257574/RobLoach"
+    "gittip": false,
+    "flattr": false,
+    "npmdownloads": false
   },
   "dependencies": {
     "docpad": "~6",
@@ -54,15 +55,13 @@
     "staging": "node_modules/docpad/bin/docpad run --env static",
     "postinstall": "node_modules/bower/bin/bower install",
     "test": "node_modules/docpad/bin/docpad generate --env static",
-    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static"
+    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static",
+    "projectz": "node_modules/.bin/projectz compile"
   },
   "maintainers": [
     "Rob Loach (https://github.com/RobLoach)"
   ],
-  "contributors": [
-    "nedloach (https://github.com/nedloach)",
-    "Rob Loach (https://github.com/RobLoach)"
-  ],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/robloach/360screenings.com/issues"
   }
