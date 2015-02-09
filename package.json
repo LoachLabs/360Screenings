@@ -30,7 +30,7 @@
     "docpad": "~6",
     "docpad-plugin-jade": "~2.9.0",
     "docpad-plugin-marked": "~2.2.1",
-    "marked": "~0.3.0",
+    "marked": "~0.3.3",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-associatedfiles": "~2.2.0",
     "grunt-contrib-clean": "~0.6.0",
