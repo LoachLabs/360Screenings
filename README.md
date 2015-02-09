@@ -8,7 +8,7 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](https://img.shields.io/travis/LoachLabs/360Screenings/master.svg)](http://travis-ci.org/LoachLabs/360screenings.com "Check this project's build status on TravisCI")
+[![Build Status](https://img.shields.io/travis/LoachLabs/360Screenings/master.svg)](http://travis-ci.org/LoachLabs/360Screenings "Check this project's build status on TravisCI")
 [![Dependency Status](https://img.shields.io/david/LoachLabs/360Screenings.svg)](https://david-dm.org/LoachLabs/360Screenings)<br/>
 
 <!-- /BADGES -->
