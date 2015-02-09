@@ -1,7 +1,8 @@
 {
   "title": "360 Screenings",
   "name": "360screenings.com",
-  "github": "RobLoach/360screenings.com",
+  "github": "LoachLabs/360Screenings",
+  "private": true,
   "version": "0.0.1",
   "description": "Website for 360Screenings.com",
   "author": "Rob Loach (http://github.com/robloach)",
@@ -14,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RobLoach/360screenings.com.git"
+    "url": "https://github.com/LoachLabs/360Screenings.git"
   },
   "badges": {
     "travis": true,
@@ -26,26 +27,26 @@
   },
   "dependencies": {
     "docpad": "~6",
-    "docpad-plugin-jade": "~2.6.0",
-    "docpad-plugin-marked": "~2.2.0",
+    "docpad-plugin-jade": "~2.9.0",
+    "docpad-plugin-marked": "~2.2.1",
     "marked": "~0.3.0",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-associatedfiles": "~2.2.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.7.0",
     "docpad-plugin-thumbnails": "~2.1.1",
-    "docpad-plugin-ghpages": "~2.4.1",
+    "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-uglify": "~2.4.0",
-    "docpad-plugin-cleancss": "~2.0.2"
+    "docpad-plugin-cleancss": "~2.2.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.6.0",
-    "grunt-cli": "~0.1.11",
-    "bower": "~1.2.7",
-    "docpad-plugin-services": "~2.5.0",
+    "grunt-cli": "~0.1.13",
+    "bower": "~1.3.12",
+    "docpad-plugin-services": "~2.6.0",
     "docpad-plugin-redirector": "~2.0.0",
-    "projectz": "~0.3.11"
+    "projectz": "~0.3.17"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

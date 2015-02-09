@@ -40,6 +40,8 @@ plugins:
     'default': 'zoomcrop'
   cleanurls:
     enabled: true
+  ghpages:
+    deployBranch: 'deploy'
   redirector:
       redirects:
           "October2013": "/exorcist"
@@ -50,7 +52,7 @@ environments:
       site:
         title: "360 Screenings"
         scripts: [
-          "/vendor/jquery/jquery.js"
+          "/vendor/jquery/dist/jquery.js"
           "/vendor/bootstrap/dist/js/bootstrap.js"
           "/vendor/blueimp-gallery/js/blueimp-gallery.js"
           "/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js"
