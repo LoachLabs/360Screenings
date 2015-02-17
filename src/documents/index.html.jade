@@ -11,7 +11,13 @@ section.index
       .row
         .col-md-8
           :markdown
-            **[360 Screenings](http://360screenings.com)** provides a cinematic experience that audiences not only watch, but also become a part of through live theatre installations. The location, a *Toronto* heritage building, is kept secret until 24 hours prior to the screening. You, the audience, are encouraged to explore, uncover and interact with everything that surrounds you. Part film, part theatre, with a dash of mystery.
+            **[360 Screenings](http://360screenings.com)** provides a cinematic
+            experience that audiences not only watch, but also become a part of
+            through live theatre installations. The location, a *Toronto* heritage
+            building, is kept secret until 24 hours prior to the screening. You,
+            the audience, are encouraged to explore, uncover and interact with
+            everything that surrounds you. Part film, part theatre, with a dash of
+            mystery.
 
         .col-md-4
           iframe(height="280", src="//www.youtube.com/embed/hEVoZLCCosM?rel=0&theme=dark&height=280&modestbranding=1&wmode=transparent", allowfullscreen, title="360 Screenings Recap")
@@ -19,8 +25,9 @@ section.index
           form.validate.form-inline#mc-embedded-subscribe-form(action="http://360screenings.us5.list-manage2.com/subscribe/post?u=ebc87bb944ba1f4df138fa027&amp;id=144e89fef7", method="post", name="mc-embedded-subscribe-form", _lpchecked="1", role="form")
             .form-group
               label(for="email") Register through email
-              input.input-sm.form-control#mce-EMAIL.email(type="email", name="EMAIL", placeholder="Register email address", required="", it="email")
-            button#mc-embedded-subscribe.btn.btn-primary.btn-sm(type="submit", value="Subscribe", name="subscribe") Subscribe
+              input.input-sm.form-control#mce-EMAIL.email(type="email", name="EMAIL", placeholder="Register email address", required, it="email")
+            button.btn.btn-primary.btn-sm#mc-embedded-subscribe(type="submit", value="Subscribe", name="subscribe")
+              span Subscribe
 
   .container
     .row

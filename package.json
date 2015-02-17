@@ -28,18 +28,17 @@
   },
   "dependencies": {
     "docpad": "~6",
-    "docpad-plugin-jade": "~2.9.0",
-    "docpad-plugin-marked": "~2.2.1",
-    "marked": "~0.3.3",
-    "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-associatedfiles": "~2.2.0",
+    "docpad-plugin-cleancss": "~2.2.0",
+    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-grunt": "~2.1.1",
+    "docpad-plugin-imagin": "~2.0.2",
+    "docpad-plugin-jade": "~2.9.0",
+    "docpad-plugin-uglify": "~2.4.0",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-copy": "~0.7.0",
-    "docpad-plugin-thumbnails": "~2.1.1",
-    "docpad-plugin-ghpages": "~2.4.3",
-    "docpad-plugin-cleanurls": "~2.7.0",
-    "docpad-plugin-uglify": "~2.4.0",
-    "docpad-plugin-cleancss": "~2.2.0"
+    "marked": "~0.3.3"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.6.0",
@@ -51,11 +50,11 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad run",
-    "staging": "node_modules/docpad/bin/docpad run --env static",
-    "postinstall": "node_modules/bower/bin/bower install",
-    "test": "node_modules/docpad/bin/docpad generate --env static",
-    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static",
+    "start": "node_modules/.bin/docpad run",
+    "staging": "node_modules/.bin/docpad run --env static",
+    "postinstall": "node_modules/.bin/bower install",
+    "test": "node_modules/.bin/docpad generate --env static",
+    "deploy": "node_modules/.bin/docpad deploy-ghpages --env static",
     "projectz": "node_modules/.bin/projectz compile"
   },
   "maintainers": [

@@ -14,12 +14,14 @@
 <!-- /BADGES -->
 
 
-The website for [360Screenings.com](http://360screenings.com), powered by [DocPad](http://docpad.org).
+The website for [360Screenings.com](http://360screenings.com), powered by
+[DocPad](http://docpad.org).
 
 
 ## Dependencies
 
 * [Node.js](http://nodejs.org)
+* [GraphicsMagick](http//graphicsmagick.org) or [ImageMagick](http://imagemagick.org)
 
 
 ## Usage
