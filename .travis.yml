@@ -1,9 +1,9 @@
 language: node_js
-install: "npm install"
+before_install:
+- sudo apt-get install graphicsmagick
 cache:
   directories:
     - node_modules
-script: "npm test"
 node_js:
   - "0.10"
 notifications:
