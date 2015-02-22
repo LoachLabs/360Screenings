@@ -42,7 +42,7 @@ module.exports =
     cleanurls:
       enabled: true
     ghpages:
-      deployBranch: 'deploy'
+      deployBranch: 'live'
     redirector:
         redirects:
             "October2013": "/exorcist"
