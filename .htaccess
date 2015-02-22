@@ -1,0 +1,17 @@
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Make the 404 page handle not found requests.
+ErrorDocument 404 /404.html
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A1209600
+</IfModule>
+
+# Compress the files using DEFLATE.
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text/css application/javascript
